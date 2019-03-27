@@ -16,26 +16,26 @@ import static org.testng.Assert.fail;
 
 public class DataProviderWithExcel_modifyUser {
     private WebDriver driver;
-    public String baseUrl = "http://localhost:8888/wordpress/";
+    public String baseUrl = "http://localhost:8090/wordpress/";
     public WebElement webtable;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
     @DataProvider(name = "userLogin")
     public static Object[][] userLogin() {
-        Object[][] testObjArray = ExcelUtils.getTableArray("/Users/mohamednagi/IdeaProjects/WebDriverTest/AddUserTCs.xlsx","UserLogin");
+        Object[][] testObjArray = ExcelUtils.getTableArray("/home/aleksander/IdeaProjects/LastWebDriverTest/AddUserTCs.xlsx","UserLogin");
         return (testObjArray);
     }
 
     @DataProvider(name = "addUser")
     public static Object[][] addUser() {
-        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("/Users/mohamednagi/IdeaProjects/WebDriverTest/AddUserTCs.xlsx","User");
+        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("/home/aleksander/IdeaProjects/LastWebDriverTest/AddUserTCs.xlsx","User");
         return (testObjArray_addUser);
     }
 
     @DataProvider(name = "changeRoleforUser")
     public static Object[][] changeRoleUser() {
-        Object[][] testObjArray_modUser = ExcelUtils.getTableArray("/Users/mohamednagi/IdeaProjects/WebDriverTest/AddUserTCs.xlsx","modifyUser");
+        Object[][] testObjArray_modUser = ExcelUtils.getTableArray("/home/aleksander/IdeaProjects/LastWebDriverTest/AddUserTCs.xlsx","modifyUser");
         return (testObjArray_modUser);
     }
 

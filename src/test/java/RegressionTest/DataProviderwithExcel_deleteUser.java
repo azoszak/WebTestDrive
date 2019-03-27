@@ -22,7 +22,7 @@ public class DataProviderwithExcel_deleteUser {
     private static WebDriver driver;
     WebDriverWait wait;
 
-    public String baseUrl = "http://localhost:8888/wordpress/";
+    public String baseUrl = "http://localhost:8090/wordpress/";
     public WebElement webtable;
 
     @DataProvider(name = "Admin")
@@ -34,7 +34,7 @@ public class DataProviderwithExcel_deleteUser {
     }
     @DataProvider(name = "delteUser")
     public static Object[][] deleteUser() {
-        Object[][] testObjArray_deleteUser = ExcelUtils.getTableArray("/Users/mohamednagi/IdeaProjects/WebDriverTest/AddUserTCs.xlsx","deleteUser");
+        Object[][] testObjArray_deleteUser = ExcelUtils.getTableArray("/home/aleksander/IdeaProjects/LastWebDriverTest/AddUserTCs.xlsx","deleteUser");
         return (testObjArray_deleteUser);
     }
 
@@ -94,7 +94,7 @@ public class DataProviderwithExcel_deleteUser {
         //driver.findElement(By.xpath("//li[@id='menu-users']/a/div[3]")).click();
         //driver.findElement(By.className("page-title-action")).click();
 
-        driver.get("http://localhost:8888/wordpress/wp-admin/users.php");
+        driver.get("http://localhost:8090/wordpress/wp-admin/users.php");
         driver.findElement(By.id("user-search-input")).clear();
         driver.findElement(By.id("user-search-input")).sendKeys(suserName);
         //driver.findElement(By.id("user-search-input")).sendKeys(Keys.ENTER);

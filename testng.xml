@@ -27,7 +27,7 @@
                 </methods>
             </class>
         </classes>
-    </test>
+    <!--</test>
     <test name="OperaTest">
         <parameter name="browser" value="opera" />
         <classes>
@@ -53,6 +53,6 @@
                     <include name="Z1000_logoutAdmin"/>
                 </methods>
             </class>
-        </classes>
+        </classes>-->
     </test>
 </suite>

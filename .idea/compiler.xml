@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LastWebDriverTest" />
         <module name="WebDriverTest" />
+        <module name="LastWebDriverTest" />
       </profile>
     </annotationProcessing>
   </component>
